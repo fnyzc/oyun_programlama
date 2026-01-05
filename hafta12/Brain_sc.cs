@@ -71,7 +71,7 @@ public class Brain_sc : MonoBehaviour
             }
             if (sse <= targetSSE)
             {
-                Debug.Log($"✅ Training completed at epoch {epoch} | Final SSE: {sse}");
+                Debug.Log($"Training completed at epoch {epoch} | Final SSE: {sse}");
                 break;
             }
             if (double.IsNaN(sse) || double.IsInfinity(sse))
